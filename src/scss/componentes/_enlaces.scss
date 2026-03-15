@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.acciones {
+    margin-top: v.$separacion;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    @include m.tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        color: v.$blanco;
+        margin-bottom: calc(v.$separacion/2);
+        text-align: center;
+    }
+}
